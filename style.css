@@ -1,0 +1,149 @@
+      /* Custom font */
+      @font-face {
+        font-family: love; 
+        src: url(LoveDays-2v7Oe.ttf);
+      }
+
+      /* Page styling */
+      body {
+        background: linear-gradient(135deg, #6A0572, #EA04C4 );
+        height: 100vh;
+
+      }
+
+      /* Title styling */
+      h1 {
+        font-family: love;
+        font-size: 50px;
+        padding-bottom: 10px;
+        margin: 0;
+        text-align: center;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-family: love;
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin: 0;
+        color: #34057b;
+      }
+
+      h2 {
+        font-family: love;
+        font-size: 50px;
+        padding-bottom: 10px;
+        margin: 0;
+        color: #34057b;
+
+      }
+      
+      .score {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        max-width: 200px;
+        border-radius: 20px;
+        box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+
+      .chosen-moves{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 100px;
+        padding-left: 100px;
+      }
+
+      button:not(.reset-button) {
+        font-size: 25px;
+        border: none;
+        height: 60px;
+        width: 120px;
+        box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .reset-button{
+        font-size: 40px;
+        height: 90px;
+        background-color: #e84080;
+        border: none;
+        color: white;
+        box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.4);
+        border-radius: 100px;
+        cursor: pointer;
+      }
+      .reset-button:hover{
+        background-color: red;
+        color: black;
+      }
+      .reset-button:active{
+        transform: scale(0.9);
+      }
+
+      .all-buttons, .computermove{
+        display: flex;
+        align-content: center;
+        justify-content: center ;
+        padding-bottom: 20px;
+        gap: 20px;
+      }
+
+      .reset-container{
+        display: flex;
+        justify-content: center;
+      }
+
+      .scissors-button{
+        background-color: #4C8DFF;
+        color: #FFFFFF;
+      }
+      
+      .all-buttons .scissors-button:hover{
+        background-color: #09347c;
+        color: #777474;
+      }
+
+      .all-buttons .scissors-button:active{
+        background-color: #4C8DFF;
+        color: #FFFFFF;
+        transform: scale(1.2);
+      }
+
+      .paper-button{
+        background-color: #b87ae8;
+        color: #ffffff;
+      }
+
+      .all-buttons .paper-button:hover{
+        background-color: #9335db;
+        color: #777474;
+      }
+
+      .all-buttons .paper-button:active{
+        background-color: #b87ae8;
+        color: #ffffff;
+        transform: scale(1.2);
+      }
+
+      .rock-button{
+        background-color: #31B031;
+        color: #FFFFFF;
+      }
+
+      .all-buttons .rock-button:hover{
+        background-color: #0b600b;
+        color: #777474;
+      }
+      .all-buttons .rock-button:active{
+        background-color: #31B031;
+        color: #FFFFFF;
+        transform: scale(1.2);
+      }
